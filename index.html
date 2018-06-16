@@ -5,14 +5,11 @@ title: Caleb Everett's Website
 <section id="posts" class="container">
   {% for post in paginator.posts %}
     <article class="post card">
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h5>
-        <h6 class="date card-subtitle">{{ post.date | date: "%m/%d/%Y" }}</h6>
+      <div class="post-body card-body">
+        <h4 class="post-title card-title">{{ post.title }}</h4>
+        <h6 class="date card-subtitle mb-2 text-muted">{{ post.date | date: "%m/%d/%Y" }}</h6>
         <p class="card-text">{{ post.excerpt }}</p>
+        <a href="{{ post.url }}" class="card-link">Read More</a>
       </div>
     </article>
   {% endfor %}
