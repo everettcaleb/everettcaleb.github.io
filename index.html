@@ -6,12 +6,12 @@ title: Caleb Everett's Website
   {% for post in paginator.posts %}
     <article class="post card">
       <div class="card-body">
-        <h1 class="card-title">
+        <h5 class="card-title">
           <a href="{{ post.url }}">
             {{ post.title }}
           </a>
-        </h1>
-        <h2 class="date card-subtitle">{{ post.date | date: "%m/%d/%Y" }}</h2>
+        </h5>
+        <h6 class="date card-subtitle">{{ post.date | date: "%m/%d/%Y" }}</h6>
         <p class="card-text">{{ post.excerpt }}</p>
       </div>
     </article>
