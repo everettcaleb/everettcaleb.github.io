@@ -2,15 +2,19 @@
 layout: default
 title: Caleb Everett's Website
 ---
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
+<section id="posts">
+  <div class="post">
+    {% for post in paginator.posts %}
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p class="author">
+        <span class="date">{{ post.date }}</span>
+      </p>
+      <div class="content">
+        {{ post.content }}
+      </div>
+    {% endfor %}
   </div>
-{% endfor %}
+</section>
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
