@@ -9,10 +9,15 @@
 </head>
 <body>
   {% include navbar.html %}
-  <article class="container">
-    <h1>{{ page.title }}</h1>
-    {{ content }}
-  </article
+  <div class="container">
+    <article id="post" class="post card">
+      <div class="post-body card-body">
+        <h1 class="post-title card-title">{{ page.title }}</h1>
+        <h6 class="date card-subtitle mb-2 text-muted">{{ post.date | date: "%m/%d/%Y" }}</h6>
+        {{ content }}
+      </div>
+    </article
+  </div>
   {% include scripts.html %}
 </body>
 </html>

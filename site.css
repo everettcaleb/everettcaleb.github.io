@@ -1,3 +1,12 @@
 body {
-  background: #eee;
+  background: url('/background.png');
+  padding-top: 70px;
+}
+
+#navbar {
+  background: #2979FF;
+}
+
+#posts .post:not(:first-of-type) {
+  margin-top: 15px;
 }
