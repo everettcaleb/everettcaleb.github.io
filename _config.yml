@@ -1,7 +1,0 @@
-name: Caleb Everett's Website
-markdown: kramdown
-permalink: "/:year/:month/:day/:title"
-paginate: 5
-paginate_path: "/page/:num/"
-plugins:
-  - jekyll-sitemap
